@@ -1,0 +1,105 @@
+/* Colores de Hollow Knight */
+:root {
+    --color-fondo: #1a1a2e;  /* azul oscuro */
+    --color-principal: #6a5acd; /* morado */
+    --color-secundario: #f5f5f5; /* blanco */
+    --color-hover: #ffb86c; /* naranja claro */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-secundario);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-principal);
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#menu-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Menú desplegable */
+#menu {
+    display: none;
+    background-color: rgba(0,0,0,0.85);
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    border-radius: 10px;
+    padding: 10px 0;
+    min-width: 220px;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    margin: 5px 0;
+}
+
+/* Botones del menú: enlaces estilizados */
+.menu-btn-link {
+    display: block;
+    padding: 12px 25px;
+    margin: 5px 10px;
+    text-align: center;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    text-decoration: none; /* elimina subrayado */
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-btn-link:hover {
+    background-color: var(--color-hover);
+    color: #000;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--color-principal);
+    margin-top: 20px;
+    color: var(--color-secundario);
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
