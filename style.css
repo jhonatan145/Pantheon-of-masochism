@@ -1,0 +1,191 @@
+/* Colores base inspirados en Hollow Knight */
+:root {
+  --azul-caballero: #3b5ba3;
+  --gris-oscuro: #0e0e12;
+  --blanco: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--gris-oscuro);
+  color: var(--blanco);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #15161a;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-btn {
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: var(--azul-caballero);
+  cursor: pointer;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--blanco);
+}
+
+/* Menú lateral */
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--azul-caballero);
+  overflow-x: hidden;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.side-menu button {
+  padding: 12px;
+  border: none;
+  background: none;
+  color: var(--blanco);
+  text-align: left;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.side-menu button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: var(--blanco);
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  color: var(--azul-caballero);
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+/* --- Zonas de Hallownest --- */
+.zona {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(59, 91, 163, 0.2);
+}
+
+.zona h3 {
+  color: var(--azul-caballero);
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--azul-caballero);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.tabla-zona {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--blanco);
+}
+
+.tabla-zona th {
+  background-color: rgba(59, 91, 163, 0.3);
+  padding: 10px;
+  text-align: left;
+  width: 25%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tabla-zona td {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mapa-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 2px solid var(--azul-caballero);
+  display: block;
+  margin: 10px auto;
+}
+/* --- Imagen ampliada (modal) --- */
+#imgModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#imgModal img {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  border: 2px solid var(--azul-caballero);
+  box-shadow: 0 0 20px rgba(59, 91, 163, 0.8);
+}
+
+#imgModal span {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#imgModal span:hover {
+  color: var(--azul-caballero);
+}
